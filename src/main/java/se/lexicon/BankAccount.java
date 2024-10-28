@@ -22,10 +22,9 @@ public class BankAccount {
 
     }
 
-    //Methods
-    private void generateAccountNumber() {
-        this.accountNumber = UUID.randomUUID().toString();
-    }
+
+
+
     //Getters
 
     public String getAccountNumber() {
@@ -69,6 +68,10 @@ public class BankAccount {
 
     //methods
 
+    private void generateAccountNumber() {
+        this.accountNumber = UUID.randomUUID().toString();
+    }
+
     public void deposit (double amount){
         //adds Amount to balance
         balance += amount;
@@ -95,7 +98,11 @@ public class BankAccount {
         stringBuilder.append(email);
         stringBuilder.append(", PhoneNumber OF Account Holder:  ");
         stringBuilder.append(phoneNumber);
+        return stringBuilder.toString();
     }
+
+
+
 }
 
 
