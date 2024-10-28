@@ -82,6 +82,20 @@ public class BankAccount {
             System.out.println("Insufficient Balance!");
         }
     }
+    public String getAccountInfo(){
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("Account Info:  ");
+        stringBuilder.append("Account Number:  ");
+        stringBuilder.append(accountNumber);
+        stringBuilder.append(", Balance $;  ");
+        stringBuilder.append(balance);
+        stringBuilder.append(" , Account Holder:  ");
+        stringBuilder.append(customerName);
+        stringBuilder.append(" , Email Of Account Holder:  ");
+        stringBuilder.append(email);
+        stringBuilder.append(", PhoneNumber OF Account Holder:  ");
+        stringBuilder.append(phoneNumber);
+    }
 }
 
 
